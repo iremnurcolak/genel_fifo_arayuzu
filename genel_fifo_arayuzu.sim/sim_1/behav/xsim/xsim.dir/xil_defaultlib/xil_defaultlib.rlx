@@ -2,8 +2,9 @@
 2018.3
 Dec  6 2018
 23:39:36
-/home/irem/Desktop/genel_fifo_arayuzu/genel_fifo_arayuzu.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
-/home/irem/Desktop/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sim_1/new/tb_genel_fifo_arayuzu.v,1627918412,verilog,,,,tb_genel_fifo_arayuzu,,,,,,,,
-/home/irem/Desktop/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sim_1/new/tb_tr.v,1627919636,verilog,,,,tb_tr,,,,,,,,
-/home/irem/Desktop/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v,1627919953,verilog,,/home/irem/Desktop/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sim_1/new/tb_tr.v,,UART_transmitter,,,,,,,,
-/home/irem/Desktop/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/genel_fifo_arayuzu.v,1627919462,verilog,,/home/irem/Desktop/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sim_1/new/tb_genel_fifo_arayuzu.v,,genel_fifo_arayuzu,,,,,,,,
+/home/irem/genel_fifo_arayuzu/genel_fifo_arayuzu.sim/sim_1/behav/xsim/glbl.v,1628149120,verilog,,,,glbl,,,,,,,,
+/home/irem/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sim_1/new/tb_genel_fifo_arayuzu.v,1628154799,verilog,,,,tb_genel_fifo_arayuzu,,,,,,,,
+/home/irem/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sim_1/new/tb_tr.v,1628149120,verilog,,,,tb_tr,,,,,,,,
+/home/irem/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_receiver.v,1628154649,verilog,,/home/irem/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v,,UART_receiver,,,,,,,,
+/home/irem/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v,1628149120,verilog,,/home/irem/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/genel_fifo_arayuzu.v,,UART_transmitter,,,,,,,,
+/home/irem/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/genel_fifo_arayuzu.v,1628154726,verilog,,/home/irem/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sim_1/new/tb_genel_fifo_arayuzu.v,,genel_fifo_arayuzu,,,,,,,,

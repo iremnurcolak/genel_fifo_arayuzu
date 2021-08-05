@@ -37,7 +37,9 @@ module tb_genel_fifo_arayuzu(
     initial begin
         system_clk=1;
         system_rst=0;
-        komut=32'b01010101010101010101010101010101; komut_gecerli=1;
-    
+    //    komut=32'b01110001010101010101010101010000; komut_gecerli=1; #250;
+      // komut=32'b01010101101010101010101010101000; komut_gecerli=1;   #250;
+        komut=32'b01010101011010101010101010101010; komut_gecerli=1;   #20;
+        komut=32'b01010101101010101010101010101000; komut_gecerli=1;   #250;
     end 
 endmodule
