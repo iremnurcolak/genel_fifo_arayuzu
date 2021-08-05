@@ -1,0 +1,1 @@
+# genel_fifo_arayuzu
