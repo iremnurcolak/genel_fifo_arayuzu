@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Aug  4 12:44:16 2021
+# Process ID: 6984
+# Current directory: C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10092 C:\Users\iremn\OneDrive\Masaüstü\genel_fifo_arayuzu\genel_fifo_arayuzu.xpr
+# Log file: C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/vivado.log
+# Journal file: C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/genel_fifo_arayuzu.xprupdate_compile_order -fileset sources_1

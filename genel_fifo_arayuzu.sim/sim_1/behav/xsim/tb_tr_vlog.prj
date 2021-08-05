@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v" \
+"../../../../genel_fifo_arayuzu.srcs/sim_1/new/tb_tr.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

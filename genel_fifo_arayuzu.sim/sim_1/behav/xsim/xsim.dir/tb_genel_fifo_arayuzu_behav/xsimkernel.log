@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_genel_fifo_arayuzu_behav/xsimk -simmode gui -wdb tb_genel_fifo_arayuzu_behav.wdb -simrunnum 0 -socket 47527
+Design successfully loaded
+Design Loading Memory Usage: 43628 KB (Peak: 43748 KB)
+Design Loading CPU Usage: 10 ms
