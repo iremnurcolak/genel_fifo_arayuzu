@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Iremnur Colak
 // 
 // Create Date: 06/08/2021 12:31:58 PM
 // Design Name: 
@@ -65,7 +65,12 @@ module genel_fifo_arayuzu(
       
         end
         else begin
-            
+            data_en<=0;
+            komut_hazir<=0;
+            change_baudrate<=0;
+            baudrate<=2'b00;
+            mesgul_tr<=0;
+            mesgul_re<=0;
         end
     end
     

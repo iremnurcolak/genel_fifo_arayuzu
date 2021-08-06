@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/genel_fifo_arayuzu.sim/sim_1/behav/xsim/xsim.dir/tb_genel_fifo_arayuzu_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Thu Aug  5 23:16:26 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Fri Aug  6 09:17:52 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.3 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2405991" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "2d6aadcd-cc14-48b0-8916-4476b8f85959" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "2d62c284e795427a8f15be9b113fdbd6" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "48" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "50" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz" -context "user_environment"
@@ -25,8 +25,8 @@ webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.06_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "6860_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1073783861 -regid "" -xml C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/genel_fifo_arayuzu.sim/sim_1/behav/xsim/xsim.dir/tb_genel_fifo_arayuzu_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/genel_fifo_arayuzu.sim/sim_1/behav/xsim/xsim.dir/tb_genel_fifo_arayuzu_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/genel_fifo_arayuzu.sim/sim_1/behav/xsim/xsim.dir/tb_genel_fifo_arayuzu_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key iteration -value "2" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.12_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "6116_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1409469207 -regid "" -xml C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/genel_fifo_arayuzu.sim/sim_1/behav/xsim/xsim.dir/tb_genel_fifo_arayuzu_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/genel_fifo_arayuzu.sim/sim_1/behav/xsim/xsim.dir/tb_genel_fifo_arayuzu_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/genel_fifo_arayuzu.sim/sim_1/behav/xsim/xsim.dir/tb_genel_fifo_arayuzu_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
