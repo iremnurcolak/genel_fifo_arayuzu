@@ -57,6 +57,9 @@ module UART_receiver(
                         $display("burda");
                     end
          end
+         else if(system_rst)begin
+            bit_basina_cevrim_simdiki=2;
+         end
     
     end
     always @(posedge system_clk) begin

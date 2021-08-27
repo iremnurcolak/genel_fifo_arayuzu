@@ -42,14 +42,16 @@ module UART_transmitter(
     
 
     always @ (* ) begin
-        if (change_baudrate==1)begin
+        if (change_baudrate==1 && !system_rst)begin
             if(baudrate==2'b00)
                 bit_basina_cevrim_simdiki=2;//9600
       
             else if(baudrate==2'b01)
                 bit_basina_cevrim_simdiki=4;//115200
         end
-      
+       else if(system_rst)begin
+            bit_basina_cevrim_simdiki=2;
+         end
     end
     always @ (posedge system_clk ) begin
             bit_basina_cevrim<=bit_basina_cevrim_simdiki;
@@ -116,8 +118,7 @@ module UART_transmitter(
                 mesgul      <= 1'b0;
                 TX          <= 1'b1;
                 index       <= 1'b0;
-            bit_basina_cevrim_simdiki<=2;//9600
-            
+           
             end
 
     end
