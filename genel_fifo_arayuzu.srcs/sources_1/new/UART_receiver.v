@@ -31,7 +31,7 @@ module UART_receiver(
     output  reg     data_en=0,
     output  reg     corrupted
     );
-    reg [20:0]bit_basina_cevrim_simdiki=2;
+    reg [20:0]bit_basina_cevrim_next=2;
      reg[20:0] bit_basina_cevrim =2;
     reg [3:0] index=4'b0;
     integer num_of_cycles=0;
@@ -43,28 +43,24 @@ module UART_receiver(
         if( !system_rst ) begin
             if(change_baudrate)begin
                     
-                    if(baudrate==2'b00) bit_basina_cevrim_simdiki<=2;
+                    if(baudrate==2'b00) bit_basina_cevrim_next<=2;
                     else if (baudrate==2'b01)bit_basina_cevrim_simdiki<=4;
                 end
-                bit_basina_cevrim <=bit_basina_cevrim_simdiki;
+                bit_basina_cevrim <=bit_basina_cevrim_next;
          end
     end*/
     always @*begin
-         if(change_baudrate && !system_rst)begin
-                    if(baudrate==2'b00) bit_basina_cevrim_simdiki=2;
-                    else if (baudrate==2'b01)begin
-                       bit_basina_cevrim_simdiki=4;
-                        $display("burda");
-                    end
+         if(change_baudrate && !system_rst&& baudrate==2'b01)begin          
+                       bit_basina_cevrim_next=4;
          end
-         else if(system_rst)begin
-            bit_basina_cevrim_simdiki=2;
+         else if(system_rst ||(change_baudrate && baudrate==2'b00 &&!system_rst))begin
+            bit_basina_cevrim_next=2;
          end
     
     end
     always @(posedge system_clk) begin
-    $display("%d",bit_basina_cevrim_simdiki);
-        bit_basina_cevrim <=bit_basina_cevrim_simdiki;
+    $display("%d",bit_basina_cevrim_next);
+        bit_basina_cevrim <=bit_basina_cevrim_next;
         if( !system_rst ) begin
             if(!mesgul)data_en<=0;
             if(!mesgul && RX==0&& num_of_cycles ==(bit_basina_cevrim-1)/2)begin

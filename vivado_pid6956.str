@@ -106,3 +106,172 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // [Engine Memory]: 679 MB (+6228kb) [00:00:25]
 // Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:10 . Memory (MB): peak = 707.086 ; gain = 106.977 
 dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Aug 27 17:15:46 2021] Launched synth_1... Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 712 MB. GUI used memory: 50 MB. Current time: 8/27/21, 5:16:10 PM EET
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 719 MB (+6698kb) [00:01:10]
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 33 seconds
+dismissDialog("Synthesis Completed"); // ah (cp)
+// Elapsed time: 24 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "42 critical warnings"); // h (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin send/bit_basina_cevrim_simdiki[20] with 1st driver pin 'send/bit_basina_cevrim_simdiki_reg[20]__0/Q' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 1, true); // ah (Q, cp) - Node
+// Elapsed time: 18 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin send/bit_basina_cevrim_simdiki[20] with 1st driver pin 'send/bit_basina_cevrim_simdiki_reg[20]__0/Q' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 1); // ah (Q, cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin send/bit_basina_cevrim_simdiki[20] with 1st driver pin 'send/bit_basina_cevrim_simdiki_reg[20]__0/Q' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. , [Synth 8-6859] multi-driven net on pin send/bit_basina_cevrim_simdiki[1] with 1st driver pin 'send/bit_basina_cevrim_simdiki_reg[1]__0/Q' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 39, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.srcs\sources_1\new\UART_transmitter.v;-;;-;16;-;line;-;47;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genel_fifo_arayuzu (genel_fifo_arayuzu.v), receive : UART_receiver (UART_receiver.v)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genel_fifo_arayuzu (genel_fifo_arayuzu.v), receive : UART_receiver (UART_receiver.v)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("UART_receiver.v", 146, 285); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("UART_receiver.v", 358, 178); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'c'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 147, 314); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 148, 321); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_transmitter.v", 1); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 740 MB. GUI used memory: 54 MB. Current time: 8/27/21, 5:18:25 PM EET
+selectCodeEditor("UART_transmitter.v", 268, 157); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.v", 2); // k (j, cp)
+selectCodeEditor("UART_receiver.v", 120, 344); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_transmitter.v", 1); // k (j, cp)
+selectCodeEditor("UART_transmitter.v", 155, 306); // cl (w, cp)
+typeControlKey((HResource) null, "UART_transmitter.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("UART_transmitter.v", 197, 234); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 97, 206); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 116, 220); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Aug 27 17:18:59 2021] Launched synth_1... Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 416ms to process. Increasing delay to 3000 ms.
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aR, cp): TRUE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// Elapsed time: 16 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (send/bit_basina_cevrim_simdiki_reg[20]) is unused and will be removed from module genel_fifo_arayuzu.. ]", 4, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design genel_fifo_arayuzu has unconnected port veri[31]. ]", 2, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6014] Unused sequential element stop_bit_reg was removed.  [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_receiver.v:98]. ]", 1, false); // ah (Q, cp)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design genel_fifo_arayuzu has unconnected port veri[31]. ]", 2); // ah (Q, cp)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design genel_fifo_arayuzu has unconnected port veri[31]. ]", 2); // ah (Q, cp)
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.v", 2); // k (j, cp)
+// [GUI Memory]: 115 MB (+3899kb) [00:06:06]
+selectCodeEditor("UART_receiver.v", 336, 86); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 822, 207); // cl (w, cp)
+// Elapsed time: 65 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "stop"); // l (aT, cp)
+// Elapsed time: 22 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.srcs\sources_1\new\UART_transmitter.v;-;;-;16;-;line;-;47;-;;-;16;-;"); // ah (Q, cp)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3); // ah (Q, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("UART_transmitter.v", 61, 330); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 55, 329); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.v", 2); // k (j, cp)
+selectCodeEditor("UART_receiver.v", 79, 261); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_transmitter.v", 1); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Aug 27 17:23:42 2021] Launched synth_1... Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 26 seconds
+dismissDialog("Synthesis Completed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.srcs\sources_1\new\UART_transmitter.v;-;;-;16;-;line;-;47;-;;-;16;-;"); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.srcs\sources_1\new\UART_transmitter.v;-;;-;16;-;line;-;47;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 13 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (send/bit_basina_cevrim_simdiki_reg[20]) is unused and will be removed from module genel_fifo_arayuzu.. ]", 4); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (send/bit_basina_cevrim_simdiki_reg[20]) is unused and will be removed from module genel_fifo_arayuzu.. ]", 4, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (send/bit_basina_cevrim_simdiki_reg[20]) is unused and will be removed from module genel_fifo_arayuzu.. ]", 4, true, false, false, false, false, true); // ah (Q, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genel_fifo_arayuzu (genel_fifo_arayuzu.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genel_fifo_arayuzu (genel_fifo_arayuzu.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.v", 2); // k (j, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.srcs\sources_1\new\UART_transmitter.v;-;;-;16;-;line;-;47;-;;-;16;-;"); // ah (Q, cp)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. , [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_receiver.v:54]. ]", 4, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.srcs\sources_1\new\UART_receiver.v;-;;-;16;-;line;-;54;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("UART_receiver.v", 501, 223); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 501, 223, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("UART_receiver.v", 501, 223); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 501, 223); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 501, 223); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 501, 223); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 501, 223, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 41 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3, true, false, false, false, true, false); // ah (Q, cp) - Popup Trigger - Node
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // ac (K, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // ac (K, Popup.HeavyWeightWindow)
+// Elapsed time: 105 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "genel_fifo_arayuzu.v", 3); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.v", 1); // k (j, cp)
