@@ -41,18 +41,18 @@ module UART_transmitter(
     wire [10:0] frame= {1'b1,parity_bit,data,1'b0};
     
 
-    always @ (posedge system_clk ) begin
+    always @ (* ) begin
         if (change_baudrate==1)begin
             if(baudrate==2'b00)
-                bit_basina_cevrim_simdiki<=2;//9600
+                bit_basina_cevrim_simdiki=2;//9600
       
             else if(baudrate==2'b01)
-                bit_basina_cevrim_simdiki<=4;//115200
+                bit_basina_cevrim_simdiki=4;//115200
         end
-      bit_basina_cevrim<=bit_basina_cevrim_simdiki;
+      
     end
     always @ (posedge system_clk ) begin
-           
+            bit_basina_cevrim<=bit_basina_cevrim_simdiki;
             if(!system_rst)begin
                 if(data_en && !mesgul && index==0) begin
 

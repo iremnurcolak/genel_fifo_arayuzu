@@ -24,12 +24,12 @@ module genel_fifo_arayuzu(
     input system_clk,system_rst,
     input [31:0] komut,
     input komut_gecerli,
-   input veri_hazir,
-   input RX,
+    input veri_hazir,
+    input RX,
     output TX,
     output reg komut_hazir,
-  output [31:0] veri,
-  output veri_gecerli
+    output [31:0] veri,
+    output veri_gecerli
     );
     reg data_en=0;
     reg change_baudrate=0;
@@ -49,11 +49,11 @@ module genel_fifo_arayuzu(
     always @(posedge system_clk)begin
         if(!system_rst)begin
 
-            if(komut_gecerli==1 && komut[2:0]==3'b000&&mesgul_tr==0)begin //oku
+            if(komut_gecerli==1 && komut[2:0]==3'b000&&mesgul_tr==0)begin 
                 data_en<=1;
                 mesgul_tr<=1;
             end
-            else if(komut_gecerli==1 && komut[2:0]==3'b001&&mesgul_re==0&&veri_hazir)begin //yaz
+            else if(komut_gecerli==1 && komut[2:0]==3'b001&&mesgul_re==0&&veri_hazir)begin 
           
                 mesgul_re<=1;
             end
@@ -61,21 +61,6 @@ module genel_fifo_arayuzu(
                 change_baudrate<=1;
                 baudrate<=komut[23:22];
             end
-            
-      
-        end
-        else begin
-            data_en<=0;
-            komut_hazir<=0;
-            change_baudrate<=0;
-            baudrate<=2'b00;
-            mesgul_tr<=0;
-            mesgul_re<=0;
-        end
-    end
-    
-    always @(posedge system_clk)begin
-        if(!system_rst)begin
             if(data_sent)begin
                 mesgul_tr<=0;
                 komut_hazir<=1;
@@ -89,6 +74,15 @@ module genel_fifo_arayuzu(
                 mesgul_re<=0;
                 komut_hazir<=1;
             end
+      
+        end
+        else begin
+            data_en<=0;
+            komut_hazir<=0;
+            change_baudrate<=0;
+            baudrate<=2'b00;
+            mesgul_tr<=0;
+            mesgul_re<=0;
         end
     end
     

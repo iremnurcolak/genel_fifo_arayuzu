@@ -38,7 +38,7 @@ module UART_receiver(
     reg mesgul=0;
     reg parity_bit=0;
     reg stop_bit=0;
-    
+  /*  
     always @(posedge system_clk) begin
         if( !system_rst ) begin
             if(change_baudrate)begin
@@ -48,8 +48,20 @@ module UART_receiver(
                 end
                 bit_basina_cevrim <=bit_basina_cevrim_simdiki;
          end
+    end*/
+    always @*begin
+         if(change_baudrate && !system_rst)begin
+                    if(baudrate==2'b00) bit_basina_cevrim_simdiki=2;
+                    else if (baudrate==2'b01)begin
+                       bit_basina_cevrim_simdiki=4;
+                        $display("burda");
+                    end
+         end
+    
     end
     always @(posedge system_clk) begin
+    $display("%d",bit_basina_cevrim_simdiki);
+        bit_basina_cevrim <=bit_basina_cevrim_simdiki;
         if( !system_rst ) begin
             if(!mesgul)data_en<=0;
             if(!mesgul && RX==0&& num_of_cycles ==(bit_basina_cevrim-1)/2)begin

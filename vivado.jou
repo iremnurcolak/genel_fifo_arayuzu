@@ -2,16 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Aug  5 23:08:14 2021
-# Process ID: 9948
-# Current directory: C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5664 C:\Users\iremn\OneDrive\Masaüstü\genel_fifo_arayuzu\genel_fifo_arayuzu.xpr
-# Log file: C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/vivado.log
-# Journal file: C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu\vivado.jou
+# Start of session at: Fri Aug 27 12:44:54 2021
+# Process ID: 9148
+# Current directory: C:/Users/iremn/genel_fifo_arayuzu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6044 C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.xpr
+# Log file: C:/Users/iremn/genel_fifo_arayuzu/vivado.log
+# Journal file: C:/Users/iremn/genel_fifo_arayuzu\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/iremn/OneDrive/Masaüstü/genel_fifo_arayuzu/genel_fifo_arayuzu.xpr
-update_compile_order -fileset sources_1
-launch_simulation
-source tb_genel_fifo_arayuzu.tcl
-close_sim
+open_project C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.xpr
