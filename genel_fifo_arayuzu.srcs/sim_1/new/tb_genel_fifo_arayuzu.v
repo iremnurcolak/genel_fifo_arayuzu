@@ -46,6 +46,7 @@ module tb_genel_fifo_arayuzu(
         komut=32'b01010101011010101010101010101001; komut_gecerli=1;   #10;
         RX=0;#40;RX=1;#40;RX=0;#40;RX=1;#40;RX=0;#40;RX=1;#40;RX=0;#40;RX=1;#40;RX=0;#40; RX=0; #40; RX=1;
  #100;
+ komut=32'b01010101001010101010101010101010; komut_gecerli=1;   #10;
         komut=32'b01010101101010101010101010101000; komut_gecerli=1;   #250;
     end 
 endmodule
