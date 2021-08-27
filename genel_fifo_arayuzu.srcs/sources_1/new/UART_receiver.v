@@ -56,7 +56,10 @@ module UART_receiver(
          else if(system_rst ||(change_baudrate && baudrate==2'b00 &&!system_rst))begin
             bit_basina_cevrim_next=2;
          end
-    
+         else begin
+             bit_basina_cevrim_next=2;
+         end
+      
     end
     always @(posedge system_clk) begin
     $display("%d",bit_basina_cevrim_next);

@@ -275,3 +275,120 @@ selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); //
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "genel_fifo_arayuzu.v", 3); // k (j, cp)
 closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.v", 1); // k (j, cp)
+// Elapsed time: 316 seconds
+selectCodeEditor("UART_receiver.v", 273, 289); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 243, 219); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("UART_receiver.v", 201, 76); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 201, 79, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_receiver.v", 'c'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 276, 218); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 340, 95); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'c'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 438, 220); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("UART_receiver.v", 396, 115); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'c'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 380, 76); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 381, 75); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 452, 113); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 214, 156); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 583, 180); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 277, 70); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'c'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 612, 176); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("UART_receiver.v", 584, 230); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Aug 27 17:35:08 2021] Launched synth_1... Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 42 seconds
+dismissDialog("Synthesis Completed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3, true); // ah (Q, cp) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. ]", 3); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_transmitter.v:47]. , [Synth 8-327] inferring latch for variable 'bit_basina_cevrim_simdiki_reg' [C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.srcs/sources_1/new/UART_receiver.v:55]. ]", 4, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.srcs\sources_1\new\UART_receiver.v;-;;-;16;-;line;-;55;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("UART_receiver.v", 395, 130); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 89, 101); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("UART_receiver.v", 80, 215); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.v", 'c'); // cl (w, cp)
+// Elapsed time: 105 seconds
+selectCodeEditor("UART_receiver.v", 727, 139); // cl (w, cp)
+// Elapsed time: 64 seconds
+selectCodeEditor("UART_receiver.v", 348, 84); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 348, 84, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("UART_receiver.v", 348, 77); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 348, 78, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("UART_receiver.v", 311, 29); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 350, 33); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 292, 29); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 292, 29, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("UART_receiver.v", 209, 37); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 209, 37, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_receiver.v", 'c'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 299, 345); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 299, 345, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 232, 343); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 232, 343, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 234, 344); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 234, 344, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 327, 343); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 327, 343, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 405, 31); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 405, 31, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 395, 94); // cl (w, cp)
+selectCodeEditor("UART_receiver.v", 395, 94, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_receiver.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 415ms to process. Increasing delay to 3000 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "genel_fifo_arayuzu.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.v", 1); // k (j, cp)
+// [GUI Memory]: 122 MB (+1579kb) [00:25:06]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genel_fifo_arayuzu (genel_fifo_arayuzu.v), send : UART_transmitter (UART_transmitter.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, genel_fifo_arayuzu (genel_fifo_arayuzu.v), send : UART_transmitter (UART_transmitter.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("UART_transmitter.v", 252, 200); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 252, 200, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_transmitter.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 280, 369); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 280, 369, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_transmitter.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 274, 281); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 274, 281, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_transmitter.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 230, 347); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 230, 347, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_transmitter.v", 'v'); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 385, 177); // cl (w, cp)
+selectCodeEditor("UART_transmitter.v", 385, 177, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "UART_transmitter.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

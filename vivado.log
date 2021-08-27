@@ -30,3 +30,7 @@ reset_run synth_1
 launch_runs synth_1 -jobs 4
 [Fri Aug 27 17:23:42 2021] Launched synth_1...
 Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Aug 27 17:35:08 2021] Launched synth_1...
+Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log

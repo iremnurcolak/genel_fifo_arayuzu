@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1630074907">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1630075469">
   <File Type="PA-TCL" Name="genel_fifo_arayuzu.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="genel_fifo_arayuzu_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="genel_fifo_arayuzu_reports.tcl"/>

@@ -42,15 +42,14 @@ module UART_transmitter(
     
 
     always @ (* ) begin
-        if (change_baudrate==1 && !system_rst)begin
-            if(baudrate==2'b00)
-                bit_basina_cevrim_next=2;//9600
-      
-            else if(baudrate==2'b01)
-                bit_basina_cevrim_next=4;//115200
-        end
-       else if(system_rst)begin
+        if(change_baudrate && !system_rst&& baudrate==2'b01)begin          
+                       bit_basina_cevrim_next=4;
+         end
+         else if(system_rst ||(change_baudrate && baudrate==2'b00 &&!system_rst))begin
             bit_basina_cevrim_next=2;
+         end
+         else begin
+             bit_basina_cevrim_next=2;
          end
     end
     always @ (posedge system_clk ) begin
