@@ -40,13 +40,15 @@ module tb_genel_fifo_arayuzu(
     initial begin
         system_clk=1;
         system_rst=0;
+        #100;
     //    komut=32'b01110001010101010101010101010000; komut_gecerli=1; #250;
       // komut=32'b01010101101010101010101010101000; komut_gecerli=1;   #250;
-       komut=32'b01010101011010101010101010101010; komut_gecerli=1;   #200;
-        komut=32'b01010101011010101010101010101001; komut_gecerli=1;   #10;
-        RX=0;#40;RX=1;#40;RX=0;#40;RX=1;#40;RX=0;#40;RX=1;#40;RX=0;#40;RX=1;#40;RX=0;#40; RX=0; #40; RX=1;
- #100;
- komut=32'b01010101001010101010101010101010; komut_gecerli=1;   #10;
-        komut=32'b01010101101010101010101010101000; komut_gecerli=1;   #250;
+   //    komut=32'b01010101011010101010101010101010; komut_gecerli=1;   #20;
+        komut=32'b01010101011010101010101010101001; komut_gecerli=1;   veri_hazir=1;#10;
+        RX=0;#20;RX=1;#20;RX=0;#20;RX=1;#20;RX=0;#20;RX=1;#20;RX=0;#20;RX=1;#20;RX=0;#20; RX=0; #20; RX=1;
+ #10; veri_hazir=0;
+ komut_gecerli=0; #100;
+ komut=32'b01010101011010101010101010101010; komut_gecerli=1;   #10;
+        komut=32'b01010101101010101010101010101000; komut_gecerli=1;   
     end 
 endmodule

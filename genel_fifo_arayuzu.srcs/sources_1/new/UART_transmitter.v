@@ -29,7 +29,8 @@ module UART_transmitter(
     input    [1:0]  baudrate        ,
     //veri gondermedigi surece hep high olmali
     output    reg   TX=1            ,
-    output    reg   busy=0    
+    output    reg   busy=0          ,
+    output    reg   changed_br=0
     );
     reg [20:0]bit_basina_cevrim=2;
     reg mesgul=1'b0;
@@ -44,15 +45,19 @@ module UART_transmitter(
     always @ (* ) begin
         if(change_baudrate && !system_rst&& baudrate==2'b01)begin          
                        bit_basina_cevrim_next=4;
+                       changed_br=1;
+                        $display("%d",bit_basina_cevrim_next);
          end
          else if(system_rst ||(change_baudrate && baudrate==2'b00 &&!system_rst))begin
             bit_basina_cevrim_next=2;
+            changed_br=1;
          end
          else begin
-             bit_basina_cevrim_next=2;
+             changed_br=0;
          end
     end
     always @ (posedge system_clk ) begin
+   
             bit_basina_cevrim<=bit_basina_cevrim_next;
             if(!system_rst)begin
                 if(data_en && !mesgul && index==0) begin

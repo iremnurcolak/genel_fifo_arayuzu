@@ -2,35 +2,16 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Aug 27 17:15:06 2021
-# Process ID: 6464
+# Start of session at: Sat Aug 28 15:07:56 2021
+# Process ID: 212
 # Current directory: C:/Users/iremn/genel_fifo_arayuzu
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3588 C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9660 C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.xpr
 # Log file: C:/Users/iremn/genel_fifo_arayuzu/vivado.log
 # Journal file: C:/Users/iremn/genel_fifo_arayuzu\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.xpr
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
+oopen_project C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.xprScanning sources...
+FFinished scanning sourcesINFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 691.750 ; gain = 122.340
-update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Aug 27 17:16:01 2021...
-..
-Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Fri Aug 27 17:18:59 2021] Launched synth_1...
-Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Fri Aug 27 17:23:42 2021] Launched synth_1...
-Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Fri Aug 27 17:35:08 2021] Launched synth_1...
-Run output will be captured here: C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.runs/synth_1/runme.log
+IINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.oopen_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:53 . Memory (MB): peak = 686.543 ; gain = 121.703uupdate_compile_order -fileset sources_1launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation i

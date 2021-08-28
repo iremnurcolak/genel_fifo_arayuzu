@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="117000001fs"></ZoomEndTime>
-      <Cursor1Time time="40000000fs"></Cursor1Time>
+      <ZoomEndTime time="677480799fs"></ZoomEndTime>
+      <Cursor1Time time="230000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+      <ValueColumnWidth column_width="115"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
+   <WVObjectSize size="17" />
    <wvobject fp_name="/tb_genel_fifo_arayuzu/system_clk" type="logic">
       <obj_property name="ElementShortName">system_clk</obj_property>
       <obj_property name="ObjectShortName">system_clk</obj_property>
@@ -63,5 +63,29 @@
    <wvobject fp_name="/tb_genel_fifo_arayuzu/uut/baudrate" type="array">
       <obj_property name="ElementShortName">baudrate[1:0]</obj_property>
       <obj_property name="ObjectShortName">baudrate[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_genel_fifo_arayuzu/uut/mesgul_re" type="logic">
+      <obj_property name="ElementShortName">mesgul_re</obj_property>
+      <obj_property name="ObjectShortName">mesgul_re</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_genel_fifo_arayuzu/uut/mesgul_tr" type="logic">
+      <obj_property name="ElementShortName">mesgul_tr</obj_property>
+      <obj_property name="ObjectShortName">mesgul_tr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_genel_fifo_arayuzu/uut/data_sent" type="logic">
+      <obj_property name="ElementShortName">data_sent</obj_property>
+      <obj_property name="ObjectShortName">data_sent</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_genel_fifo_arayuzu/uut/RX_data_en" type="logic">
+      <obj_property name="ElementShortName">RX_data_en</obj_property>
+      <obj_property name="ObjectShortName">RX_data_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_genel_fifo_arayuzu/uut/change_baudrate" type="logic">
+      <obj_property name="ElementShortName">change_baudrate</obj_property>
+      <obj_property name="ObjectShortName">change_baudrate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_genel_fifo_arayuzu/uut/mesgul_br" type="logic">
+      <obj_property name="ElementShortName">mesgul_br</obj_property>
+      <obj_property name="ObjectShortName">mesgul_br</obj_property>
    </wvobject>
 </wave_config>

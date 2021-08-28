@@ -2,25 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Aug 27 17:15:06 2021
-# Process ID: 6464
+# Start of session at: Sat Aug 28 15:07:56 2021
+# Process ID: 212
 # Current directory: C:/Users/iremn/genel_fifo_arayuzu
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3588 C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9660 C:\Users\iremn\genel_fifo_arayuzu\genel_fifo_arayuzu.xpr
 # Log file: C:/Users/iremn/genel_fifo_arayuzu/vivado.log
 # Journal file: C:/Users/iremn/genel_fifo_arayuzu\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.xpr
-update_compile_order -fileset sources_1
-
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
+oopen_project C:/Users/iremn/genel_fifo_arayuzu/genel_fifo_arayuzu.xpruupdate_compile_order -fileset sources_1l

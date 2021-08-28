@@ -28,8 +28,9 @@ module UART_receiver(
     input [1:0]     baudrate        ,
     
     output  reg [7:0]   data        ,
-    output  reg     data_en=0,
-    output  reg     corrupted
+    output  reg     data_en=0       ,
+    output  reg     corrupted       ,
+    output  reg     changed_br=0
     );
     reg [20:0]bit_basina_cevrim_next=2;
      reg[20:0] bit_basina_cevrim =2;
@@ -52,17 +53,19 @@ module UART_receiver(
     always @*begin
          if(change_baudrate && !system_rst&& baudrate==2'b01)begin          
                        bit_basina_cevrim_next=4;
+                       changed_br=1;
          end
          else if(system_rst ||(change_baudrate && baudrate==2'b00 &&!system_rst))begin
             bit_basina_cevrim_next=2;
+            changed_br=1;
          end
          else begin
-             bit_basina_cevrim_next=2;
+             changed_br=0;
          end
       
     end
     always @(posedge system_clk) begin
-    $display("%d",bit_basina_cevrim_next);
+    //$display("%d",bit_basina_cevrim_next);
         bit_basina_cevrim <=bit_basina_cevrim_next;
         if( !system_rst ) begin
             if(!mesgul)data_en<=0;
